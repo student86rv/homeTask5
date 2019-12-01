@@ -1,4 +1,4 @@
-package com.company;
+package ua.epam.homeTask5;
 
 import java.util.LinkedList;
 
