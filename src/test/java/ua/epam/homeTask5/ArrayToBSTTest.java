@@ -18,4 +18,13 @@ public class ArrayToBSTTest {
 
         assertEquals(converter.convert(list), result);
     }
+
+    @Test
+    public void testConvertNull() {
+        TreeSet<Integer> emptySet = new TreeSet<Integer>();
+
+        ArrayToBST converter = new ArrayToBST();
+
+        assertEquals(converter.convert(null), emptySet);
+    }
 }
