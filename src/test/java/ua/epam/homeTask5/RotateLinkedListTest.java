@@ -1,5 +1,6 @@
 package ua.epam.homeTask5;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 import org.junit.Test;
@@ -14,11 +15,11 @@ public class RotateLinkedListTest {
             list.add(i);
         }
 
-        Integer[] expectedResult = {4, 5, 1, 2, 3};
+        LinkedList<Integer> expectedResult = new LinkedList<Integer>(Arrays.asList(4, 5, 1, 2, 3));
 
         RotateLinkedList rotateLinkedList = new RotateLinkedList();
         LinkedList<Integer> result = rotateLinkedList.rotateList(list, 3);
 
-        assertArrayEquals(result.toArray(new Integer[result.size()]), expectedResult);
+        assertEquals(result, expectedResult);
     }
 }
